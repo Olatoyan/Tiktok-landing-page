@@ -8,6 +8,337 @@ light-pink: #FDD3D7;
 
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 100rem;
+  margin: 0 auto;
+  background-color: #fdd3d7;
+}
+
+/* //////////////////////////////////
+START OF HEADER SECTION
+/////////////////////////////////// */
+
+.header {
+  background-color: #fceced;
+  /* clip-path: polygon(0 0, 0 100%, 70% 100%, 0 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 85%);
+}
+.header__nav {
+  display: flex;
+  gap: 20rem;
+}
+.logo__box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.7rem;
+}
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+.nav__links {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  display: block;
+  font-size: 1.7rem;
+  color: #1e1d1e;
+}
+
+/* //////////////////////////////////
+END OF HEADER SECTION
+/////////////////////////////////// */
+
+/* //////////////////////////////////
+START OF HERO SECTION
+/////////////////////////////////// */
+
+.hero__section {
+  background-color: #fceced;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+}
+.hero__secondary__heading {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.primary__heading {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.hero-heading__text {
+  width: 70%;
+}
+
+.hero__img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin-top: 4rem;
+}
+
+.hero__img {
+  width: 40%;
+}
+
+/* //////////////////////////////////
+END OF HERO SECTION
+/////////////////////////////////// */
+
+.main {
+  background-color: #fff;
+  margin-top: -35rem;
+  text-align: center;
+}
+
+/* //////////////////////////////////
+START OF CREATIVE SECTION
+/////////////////////////////////// */
+
+.creative__section {
+  padding: 15rem 2rem 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creative__heading__text {
+  width: 75%;
+}
+
+.creative__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.creative__img-box {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+.creative__img-box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: blur(1rem);
+  z-index: 1;
+}
+
+.creative__img {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  /* filter: drop-shadow(2px 9px 2px rgba(0, 0, 0, 0.199)); */
+  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 95%); */
+}
+
+.creative__img-text {
+  filter: blur(0.1px);
+  font-size: 1.2rem;
+  color: #ff0050;
+
+  filter: drop-shadow(2px 6px 11px black);
+}
+
+/* //////////////////////////////////
+END OF CREATIVE SECTION
+/////////////////////////////////// */
+
+/* //////////////////////////////////
+START OF GIST SECTION
+/////////////////////////////////// */
+
+.gist__section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.gist__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  width: 90%;
+  align-items: center;
+  place-items: center;
+}
+.gist__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.4rem;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 300;
+  background-color: #e94359;
+  color: #fff;
+}
+
+.gist__text-box--3 {
+  grid-row: 1/-1;
+  grid-column: 2/3;
+  place-content: center;
+}
+
+/* //////////////////////////////////
+END OF GIST SECTION
+/////////////////////////////////// */
+
+/* //////////////////////////////////
+START OF FAQ SECTION
+/////////////////////////////////// */
+.faq__section {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  gap: 6rem;
+}
+
+.faq {
+  text-align: start;
+}
+
+.faq__box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.faq__text-box {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.tertiary__heading {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.faq__text {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* //////////////////////////////////
+END OF FAQ SECTION
+/////////////////////////////////// */
+
+/* //////////////////////////////////
+START OF PARTY SECTION
+/////////////////////////////////// */
+
+.party__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.party__section h2 {
+  width: 60%;
+}
+.party__img-box {
+  margin-top: 4rem;
+  width: 100%;
+}
+.party__img {
+  width: 100%;
+}
+
+/* //////////////////////////////////
+END OF PARTY SECTION
+/////////////////////////////////// */
+
+/* //////////////////////////////////
+START OF FOOTER SECTION
+/////////////////////////////////// */
+
+.footer__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #1e1d1ea6;
+}
+
+.footer__logo-box {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  /* color: #f5f5f5; */
+}
+.footer__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* color: #f5f5f5; */
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.footer__link:link,
+.footer__link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #1e1d1e;
+}
+
+.footer__last-text {
+  color: #1e1d1e;
+  font-size: 1.3rem;
+}
+
+.final__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__logo {
+  width: 3rem;
+  height: 3rem;
+  /* background-color: #f5f5f5; */
+  border-radius: 50%;
+  padding: 0.5rem;
 }
