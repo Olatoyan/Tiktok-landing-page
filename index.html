@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/tiktok logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +26,12 @@
 
         <ul class="nav__links">
           <li><a href="#" class="nav__link">Home</a></li>
-          <li><a href="#" class="nav__link">About</a></li>
-          <li><a href="#" class="nav__link">Testimonials</a></li>
-          <li><a href="#" class="nav__link">Contact</a></li>
+          <li><a href="#gistId" class="nav__link">Gist</a></li>
+          <li><a href="#partyId" class="nav__link">Join the party</a></li>
+          <li><a href="#footer" class="nav__link">About</a></li>
         </ul>
+
+        <img src="img/icon-menu.svg" alt="menu open" class="menu__open" />
       </nav>
 
       <section class="hero__section">
@@ -48,7 +51,7 @@
         </div>
       </section>
     </header>
-    <main class="main margin-bm">
+    <main class="main">
       <section class="creative__section margin-bm">
         <h2 class="secondary__heading">
           Find your creative voice on <span class="span-red">TikTok</span>
@@ -67,18 +70,18 @@
             <img src="img/img5.png" alt="img 5" class="creative__img" />
             <p class="creative__img-text">Discovering</p>
           </div>
-          <div class="creative__img-box creative__img-box--2">
+          <div class="creative__img-box creative__img-box--3">
             <img src="img/img6.png" alt="img 6" class="creative__img" />
             <p class="creative__img-text">Live Streams</p>
           </div>
-          <div class="creative__img-box creative__img-box--1">
+          <div class="creative__img-box creative__img-box--4">
             <img src="img/img7.png" alt="img7" class="creative__img" />
             <p class="creative__img-text">Relaxing</p>
           </div>
         </div>
       </section>
 
-      <section class="gist__section margin-bm padding-2">
+      <section class="gist__section margin-bm padding-2" id="gistId">
         <h2 class="heading__secondary">
           Hear the gist on <span class="span-red">TikTok</span>
         </h2>
@@ -167,7 +170,7 @@
         </div>
       </section>
 
-      <section class="party__section margin-bm">
+      <section class="party__section margin-bm" id="partyId">
         <h2 class="secondary__heading">
           Resistance is futile. Join <span class="span-red">TikTok</span> now.
           (We have cookies)
@@ -178,7 +181,7 @@
         <a href="#" class="btn">Join the party!</a>
       </section>
 
-      <footer class="footer padding-2 margin-bm">
+      <footer class="footer padding-2 margin-bm" id="footer">
         <div class="footer__box padding-2">
           <div class="footer__logo-box">
             <img
@@ -258,5 +261,23 @@
         </div>
       </footer>
     </main>
+
+    <div>
+      <ul class="menu__links">
+        <img
+          src="img/icon-menu-close.svg"
+          alt="menu close"
+          class="menu__close"
+        />
+        <div class="menu-link">
+          <li><a href="#" class="menu__link">Home</a></li>
+          <li><a href="#" class="menu__link">About</a></li>
+          <li><a href="#" class="menu__link">Testimonials</a></li>
+          <li><a href="#" class="menu__link">Contact</a></li>
+        </div>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

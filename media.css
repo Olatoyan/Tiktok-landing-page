@@ -1,0 +1,97 @@
+@media only screen and (max-width: 51.875em) {
+  body {
+    max-width: 100%;
+  }
+  .header__nav {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    clip-path: none;
+  }
+
+  .hero__img-box {
+    display: none;
+  }
+
+  .main {
+    margin-top: -7rem;
+  }
+
+  .creative__section {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .nav__links {
+    display: none;
+  }
+
+  .menu__open {
+    display: block;
+  }
+
+  .faq__section {
+    grid-template-columns: 1fr;
+  }
+
+  .faq {
+    text-align: center;
+  }
+
+  .gist__box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gist__text-box--3 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  /* .creative__section {
+    flex-direction: row;
+  } */
+
+  .creative__box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .creative__img-box--1,
+  .creative__img-box--3,
+  .creative__img-box--4 {
+    display: none;
+  }
+
+  .creative__img-box--2 {
+    width: 50%;
+  }
+
+  .footer__box {
+    font-size: 1.2rem;
+    /* grid-template-columns: repeat(5, 1fr); */
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .footer__box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 21.85em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .heading__text {
+    font-size: 1.6rem;
+  }
+}
