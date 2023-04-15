@@ -14,12 +14,12 @@
   color: #ff0050;
 }
 
-.menu--active {
-  display: block;
+.close {
+  display: none;
 }
 
-.closed {
-  display: none;
+.open {
+  display: block;
 }
 
 .btn:link,

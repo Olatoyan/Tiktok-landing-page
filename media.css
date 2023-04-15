@@ -1,7 +1,4 @@
 @media only screen and (max-width: 51.875em) {
-  body {
-    max-width: 100%;
-  }
   .header__nav {
     justify-content: space-between;
   }
@@ -30,12 +27,61 @@
 }
 
 @media only screen and (max-width: 37.5em) {
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 2.3rem;
+  }
+
   .nav__links {
-    display: none;
+    /* display: none; */
+    flex-direction: column;
+    gap: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav__box {
+    transform: translateX(100vw);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75vw;
+    z-index: 999;
+    background-color: #fdd3d7;
+    transition: all 0.4s ease-in;
+  }
+
+  .nav__open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 0.4s ease-in;
   }
 
   .menu__open {
+    height: 1.5rem;
+    width: 3rem;
+    /* display: block; */
+    z-index: 9999;
+    /* opacity: 1;
+    visibility: visible; */
+  }
+
+  .btn__box {
     display: block;
+    z-index: 99999;
+  }
+
+  .menu__close {
+    height: 2.2rem;
+    width: 2.2rem;
+
+    z-index: 9999;
   }
 
   .faq__section {
